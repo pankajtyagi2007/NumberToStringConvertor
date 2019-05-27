@@ -43,7 +43,7 @@ public final class NumberToWordConvertor implements Convertor<String, Integer> {
 		}
 
 		if (n < 1000000) {
-			return convert(n / 1000) + " thousand" + ((n % 10000 != 0) ? " " : "") + convert(n % 1000);
+			return convert(n / 1000) + " thousand" + ((n % 1000 != 0) ? " " : "") + convert(n % 1000);
 		}
 
 		if (n < 1000000000) {
